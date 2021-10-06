@@ -55,7 +55,7 @@ namespace CasaDoCodigo
 
             serviceProvider.GetService<ApplicationContext>()
                 .Database
-                .EnsureCreated();
+                .Migrate();
         }
     }
 }
